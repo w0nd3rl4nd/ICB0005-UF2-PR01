@@ -32,6 +32,18 @@ Y los siguientes **métodos**:
 
 - `Getters y Setters` según necesidad.
 
+## Tabla de Testing
+
+| Método      | Nombre del Test            | Descripción                             | Datos de Entrada       | Resultado Esperado           |
+|-------------|----------------------------|-----------------------------------------|-------------------------|------------------------------|
+| acelerar    | test_acelerar_normal        | Aumentar velocidad dentro del límite    | incremento = 20         | velocidad_actual += 20       |
+| acelerar    | test_acelerar_supera_max    | Supera velocidad máxima                 | incremento = 300        | velocidad_actual = max       |
+| frenar      | test_frenar_normal          | Reduce velocidad sin llegar a 0         | decremento = 10         | velocidad_actual -= 10       |
+| frenar      | test_frenar_bajo_cero       | Reduce más de la velocidad actual       | decremento = 100        | velocidad_actual = 0         |
+| parar       | test_parar                  | Detener vehículo                        | -                       | velocidad_actual = 0         |
+| esDeportivo | test_es_deportivo_true      | Deportivo si velocidad > 200            | velocidad_maxima = 250  | true                         |
+| esDeportivo | test_es_deportivo_false     | No deportivo si velocidad ≤ 200         | velocidad_maxima = 180  | false                        |
+
 ## Flujo de trabajo
 - Desarrollo basado en TDD: primero se escriben los tests, luego se implementa la funcionalidad.
 - Cada funcionalidad se desarrolla en una rama distinta.
