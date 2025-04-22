@@ -1,4 +1,6 @@
-vehículo: public class Vehiculo {
+package com.icb0005.uf2;
+
+public class Vehiculo {
     private String marca;
     private String modelo;
     private int velocidadActual;
