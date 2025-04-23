@@ -56,4 +56,5 @@ public class VehiculoTest {
         Vehiculo v = new Vehiculo("Toyota", "Yaris", 180, "Gasolina");
         assertFalse(v.esDeportivo());
     }
+
 }
