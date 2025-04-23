@@ -1,11 +1,14 @@
 package com.icb0005.uf2;
 
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class VehiculoTest {
 
     @Test
+
     void testFrenarNormal() {
         Vehiculo v = new Vehiculo("Toyota", "Yaris", 180, "Gasolina");
         v.acelerar(50);
